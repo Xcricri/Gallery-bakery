@@ -16,7 +16,7 @@
 
     <div class="flex flex-col md:flex-row-reverse gap-12 items-start">
         {{-- Map --}}
-        <div class="relative h-96 w-full md:w-2/3 transition-all duration-700 ease-in-out border border-gray-100 dark:border-white/5 overflow-hidden shadow-2xl grayscale">
+        <div class="relative h-96 w-full md:w-2/3 transition-all duration-700 ease-in-out border border-gray-100 dark:border-white/5 overflow-hidden shadow-2xl grayscale hover:grayscale-0">
             <iframe
                 src="https://maps.google.com/maps?q={{ urlencode($mapQuery) }}&t=m&z={{ $mapZoom }}&output=embed&iwloc=near"
                 width="100%" height="100%"

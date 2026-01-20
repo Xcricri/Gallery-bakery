@@ -7,11 +7,10 @@
 
             {{-- History --}}
             <div
-                class="w-full h-screen py-12 bg-white dark:bg-[#0a0a0a] border-y border-gray-100 dark:border-white/[0.05] flex flex-col justify-center">
+                class="w-full min-h-[70vh] md:h-screen py-12 bg-white dark:bg-[#0a0a0a] border-y border-gray-100 dark:border-white/[0.05] flex flex-col justify-center">
                 <div class="max-w-4xl mx-auto px-6">
-                    <div class="grid grid-cols-3 gap-8">
-
-                        <div class="flex flex-col items-center group">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="flex flex-col items-center group grayscale">
                             <div
                                 class="w-16 h-16 mb-4 flex items-center justify-center border border-gray-100 dark:border-white/10 group-hover:border-black dark:group-hover:border-white transition-all duration-700 rotate-45 group-hover:rotate-0">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -70,11 +69,11 @@
                                 Budaya</span>
                         </div>
 
-                        <div class="text-center mt-5 col-span-3">
+                        <div class="text-center mt-8 md:mt-5 col-span-1 md:col-span-3">
                             <h2 class="text-2xl font-bold mb-2">Olland Bakery</h2>
                             <p class="italic font-light">
                                 Menciptakan kenangan manis di setiap momen.
-
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </div>
-
+                
                 {{-- Media Sosial --}}
                 <div>
                     <h2 class="mb-6 text-[11px] font-medium tracking-[0.3em] uppercase text-gray-400 dark:text-gray-500">

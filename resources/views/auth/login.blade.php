@@ -12,21 +12,21 @@
                 {{-- Overlay Content --}}
                 <div class="absolute inset-0 flex flex-col justify-between p-20 z-20">
                     <div class="space-y-2">
-                        <span class="text-[10px] font-black uppercase tracking-[0.5em] text-white/60 block">Management Portal</span>
+                        <span class="text-[10px] font-black uppercase tracking-[0.5em] text-white/60 block">Olland</span>
                         <div class="h-px w-12 bg-white/40"></div>
                     </div>
 
                     <div class="text-white">
                         <h1 class="text-6xl font-black tracking-tighter leading-[0.85] mb-4">
-                            The<br>Visual<br><span class="italic text-white/30">Vault.</span>
+                            Olland<br><span class="italic text-white/30">Bakery</span>
                         </h1>
                         <p class="text-[11px] font-medium uppercase tracking-[0.3em] text-white/50 leading-relaxed">
-                            Secured access to the digital<br>curation system.
+                            "Menciptakan kenangan manis di setiap momen"
                         </p>
                     </div>
 
                     <div class="flex items-center gap-4">
-                        <span class="text-[9px] font-bold text-white/30 uppercase tracking-widest">Est. 2024</span>
+                        <span class="text-[9px] font-bold text-white/30 uppercase tracking-widest">Est.{{ date('Y') }}</span>
                         <div class="flex-1 h-px bg-white/10"></div>
                     </div>
                 </div>
@@ -40,9 +40,9 @@
 
                     {{-- Header Form --}}
                     <div class="space-y-2">
-                        <h2 class="text-3xl font-black text-gray-900 dark:text-white tracking-tighter uppercase">Identify.</h2>
+                        <h2 class="text-3xl font-black text-gray-900 dark:text-white tracking-tighter uppercase">Identitas.</h2>
                         <p class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em]">
-                            Enter your credentials to unlock the archive
+                            Masukkan identitas anda untuk melanjutkan
                         </p>
                     </div>
 
@@ -54,7 +54,7 @@
 
                         <div class="group relative">
                             <label for="email" class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 group-focus-within:text-black dark:group-focus-within:text-white transition-colors">
-                                Identity Registry
+                                Email anda
                             </label>
                             <input id="email"
                                 class="block mt-1 w-full bg-transparent border-0 border-b border-gray-100 dark:border-white/10 px-0 py-3 text-sm font-bold tracking-tight text-gray-900 dark:text-white focus:ring-0 focus:border-black dark:focus:border-white transition-all placeholder:text-gray-200 dark:placeholder:text-white/5"
@@ -65,7 +65,7 @@
 
                         <div class="group relative">
                             <label for="password" class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 group-focus-within:text-black dark:group-focus-within:text-white transition-colors">
-                                Access Key
+                                Password anda
                             </label>
                             <input id="password"
                                 class="block mt-1 w-full bg-transparent border-0 border-b border-gray-100 dark:border-white/10 px-0 py-3 text-sm font-bold tracking-tight text-gray-900 dark:text-white focus:ring-0 focus:border-black dark:focus:border-white transition-all placeholder:text-gray-200 dark:placeholder:text-white/5"
@@ -77,21 +77,8 @@
                         <div class="pt-6 space-y-8">
                             <button type="submit"
                                 class="flex w-full justify-center rounded-full bg-black dark:bg-white px-8 py-5 text-[10px] font-black uppercase tracking-[0.4em] text-white dark:text-black shadow-2xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-300">
-                                {{ __('Gain Access') }}
+                                {{ __('Masuk') }}
                             </button>
-
-                            <div class="flex items-center justify-between opacity-50 hover:opacity-100 transition-opacity">
-                                <label for="remember_me" class="inline-flex items-center cursor-pointer">
-                                    <input id="remember_me" type="checkbox" class="w-3 h-3 border-gray-300 dark:border-white/10 text-black dark:text-white focus:ring-0 focus:ring-offset-0 bg-transparent rounded-none" name="remember">
-                                    <span class="ms-2 text-[8px] font-black uppercase tracking-widest text-gray-400">Remember Sync</span>
-                                </label>
-
-                                @if (Route::has('password.request'))
-                                    <a class="text-[8px] font-black uppercase tracking-widest text-gray-400 hover:text-black dark:hover:text-white transition-colors" href="{{ route('password.request') }}">
-                                        Recovery
-                                    </a>
-                                @endif
-                            </div>
                         </div>
                     </form>
                 </div>
