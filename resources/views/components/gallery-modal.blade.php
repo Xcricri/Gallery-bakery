@@ -79,7 +79,7 @@
 
             {{-- Komentar --}}
             <div class="flex-1 overflow-y-auto space-y-6 pr-2 scrollbar-hide">
-                <template x-for="comment in activePhotos[currentPhot oIndex]?.comments || []" :key="comment.id">
+                <template x-for="comment in activePhotos[currentPhotoIndex]?.comments || []" :key="comment.id">
                     <div class="border-b border-white/5 pb-4">
                         <span class="text-[10px] text-white/40 uppercase tracking-tighter"
                             x-text="comment.name || 'Guest'"></span>
