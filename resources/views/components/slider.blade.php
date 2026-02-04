@@ -44,7 +44,7 @@ class="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-[#1a1a1a] font-
                     x-transition:leave-end="opacity-0">
 
                     <!-- Overlay gelap -->
-                    <div class="absolute inset-0 bg-black/40 z-10"></div>
+                    <div class="absolute inset-0 bg-gradient z-10 "></div>
 
                     <!-- Gambar background slide -->
                     <img src="{{ $image }}" class="absolute block w-full h-full rounded-xl object-cover grayscale-[10%]" alt="{{ $title }}">
@@ -59,7 +59,7 @@ class="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-[#1a1a1a] font-
                         <h2 class="text-white text-4xl md:text-6xl font-light tracking-tight leading-tight max-w-2xl mb-8 uppercase">
                             {{ $title }}
                         </h2>
-                        
+
                         <!-- Tombol untuk membuka modal galeri -->
                         <button @click="openModal({{ $photosJson }}, '{{ addslashes($title) }}')"
                             class="group flex items-center gap-3 text-white border-b border-white/30 pb-1 hover:border-white transition-all duration-300">

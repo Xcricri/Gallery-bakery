@@ -1,6 +1,6 @@
 {{-- Modal Gallery --}}
 <div x-data="galleryModal(@json($currentUser ?? null))" x-show="modalOpen" x-cloak
-    class="fixed inset-0 z-[999] flex items-center justify-center bg-black/95 backdrop-blur-md transition-all duration-500"
+    class="fixed inset-0 z-[999] flex items-center justify-center bg-gradient-to-b from-black to-white backdrop-blur-md transition-all duration-500"
     x-transition:enter="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="opacity-100"
     x-transition:leave-end="opacity-0">
 
@@ -27,7 +27,7 @@
             <template x-if="activePhotos.length > 0">
                 <div class="relative w-full h-full flex items-center justify-center">
                     <img :src="'/storage/' + activePhotos[currentPhotoIndex].file_path"
-                        class="max-w-full max-h-full object-contain transition-all duration-700"
+                        class="max-w-full max-h-full object-contain transition-all duration-700 rounded-xl"
                         :key="currentPhotoIndex" x-transition:enter="opacity-0 scale-95"
                         x-transition:enter-end="opacity-100 scale-100">
 

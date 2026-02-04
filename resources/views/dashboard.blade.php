@@ -16,7 +16,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 @forelse($galleries as $gallery)
                     <a href="{{ route('galleries.show', $gallery->id) }}"
-                        class="group block bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-200">
+                        class="group block bg-white dark:bg-black/40 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-200">
                         {{-- Cover Image --}}
                         @php
                             $coverImage = $gallery->cover
@@ -25,7 +25,7 @@
                         @endphp
                         <div class="relative h-56 overflow-hidden">
                             <img src="{{ $coverImage }}" alt="{{ $gallery->title }}"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 dark:group-hover:scale-105">
                             <div class="absolute top-3 right-3 bg-black/40 text-white text-xs px-2 py-1 rounded-full">
                                 {{ $gallery->photos_count ?? $gallery->photos->count() }} Foto
                             </div>

@@ -40,7 +40,7 @@
 
                     {{-- Header Form --}}
                     <div class="space-y-2">
-                        <h2 class="text-3xl font-black text-gray-900 dark:text-white tracking-tighter uppercase">Identitas.</h2>
+                        <h2 class="text-3xl font-black text-gray-900 dark:text-white tracking-tighter uppercase">Login</h2>
                         <p class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em]">
                             Masukkan identitas anda untuk melanjutkan
                         </p>
